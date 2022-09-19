@@ -43,7 +43,8 @@
     padding: 4px 8px;
     width: 122px;
     height: 30px;
-    font-weight: 400;   
+    font-weight: 400;
+    cursor: pointer;   
 }
 .fecha {
     font-size: 16px;
@@ -70,7 +71,8 @@
     margin-top: 16px;
     display: flex;
     align-items: center;
-    gap: 16px;  
+    gap: 16px;
+    cursor: pointer;  
 }
 .boton-noticias {
     display: flex;
@@ -107,10 +109,7 @@
     .cartas-principal {
         width: 100%;
         cursor: pointer;
-        transition: 0.2s;
-        object-fit: cover;
+        
     }
-    .cartas-principal:hover {
-        transform: scale(1.1);
-    }
+    
 }
