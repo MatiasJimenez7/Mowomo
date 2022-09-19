@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.contenedor {
+    max-width: 1408px;
+    margin: 0 auto;   
+}
+.titulo {
+    text-align: center;
+    margin-top: 65px;
+    margin-bottom: 52px;    
+}
+.titulo h1 {
+    font-size: 135px;
+}
+.cartas {
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    justify-items: center;
+    gap: 10px;   
+}
+.cartas-principal {
+    box-shadow: 0px 20px 50px rgba(18, 17, 39, 0.08);
+    margin: auto 10px;
+    padding: 10px;
+    cursor: pointer; 
+    transition: 0.2s;
+    object-fit: cover;
+    margin-top: 50px;
+
+}
+.cartas-principal:hover {
+    transform: scale(1.2);
+}
+.cartas-principal h5 {
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    padding: 4px 8px;
+    width: 122px;
+    height: 30px;
+    font-weight: 400;   
+}
+.fecha {
+    font-size: 16px;
+    margin-top: 16px;
+}
+.image {
+    width: 412px;
+    height: 250px;
+    background: url(./img/unsplash_Tyg0rVhOTrE.png);
+    margin-top: 16px;
+
+}
+.texto-secundario {
+    font-weight: 500;
+    font-size: 32px;
+    margin-top: 16px;
+}
+.lorem {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 16px;
+}
+.persona {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;  
+}
+.boton-noticias {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 65px auto 0 auto;
+    background-color: red;
+    padding: 22px 22px;
+    width: 221px;   
+}
+.boton-noticias a {
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+}
+
+/* Media Queries */
+
+@media (max-width: 1000px ) {
+    .cartas {
+        grid-template-columns: repeat(2 , 1fr);   
+    }
+}
+
+@media (max-width: 800px ) {
+    .cartas {
+        grid-template-columns: repeat(1 , 1fr);
+    }
+    .image {
+        width: 100%;
+        max-width: 412px;
+    }
+    .cartas-principal {
+        width: 100%;
+        cursor: pointer;
+        transition: 0.2s;
+        object-fit: cover;
+    }
+    .cartas-principal:hover {
+        transform: scale(1.1);
+    }
+}
